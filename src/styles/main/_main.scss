@@ -1,0 +1,113 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	// max-width: 1980px;
+}
+
+img {
+	width: 100%;
+	display: block;
+}
+
+* {
+	font-family: 'Montserrat', sans-serif;
+	color: $color_white;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.promo-bg {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: -1;
+}
+
+.main-bg {
+	position: absolute;
+	top: 100vh;
+	width: 100%;
+	z-index: -1;
+}
+
+.screen-separator {
+	width: 101px;
+}
+
+.header {
+	height: 135px;
+
+	&__logo {
+		width: 89px;
+	}
+
+	&__menu {
+		li {
+			a {
+				font-size: $font_xs;
+				text-transform: uppercase;
+				letter-spacing: 0.205em;
+				font-weight: 700;
+			}
+		}
+	}
+}
+
+.promo {
+	padding: 330px 0 105px;
+
+	&__title {
+		font-size: $font_xl;
+	}
+
+	&__subtitle {
+		font-size: $font_l;
+		color: $color_blue;
+	}
+
+	&__arrow-down {
+		margin-top: 215px;
+	}
+}
+
+.objective {
+	padding: 0 0 137px;
+
+	&__title {
+		font-size: $font_xl;
+	}
+
+	&__descr {
+		text-align: center;
+		max-width: 970px;
+		line-height: 168%;
+	}
+
+	&__subtitle {
+		margin-top: 47px;
+		font-size: $font_m;
+		color: $color_dark_blue;
+		letter-spacing: 0.205em;
+		text-transform: uppercase;	
+	}
+
+	.mentors {
+		padding: 0 100px 110px;
+
+		&__block {
+			&-img {
+				min-width: 400px;
+				height: 574px;
+			}
+
+			&-descr {
+				width: 505px;
+			}
+		}
+	}
+}
+
