@@ -1,0 +1,311 @@
+@media (max-width: 1439px) { 
+ 
+} 
+@media (max-width: 1200px) { 
+  .mentors {
+    padding: 0;
+
+    &__block {
+      grid-template-columns: 350px 500px;
+      column-gap: 30px;
+    }
+  }
+} 
+
+@media (max-width: 1040px) { 
+  .mentors {
+    padding: 0 0 70px 0;
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__block {
+      align-content: center;
+      display: grid;
+      grid-template-columns: 500px;
+      column-gap: 70px;
+      
+  
+      &:last-child {
+        grid-template-columns: 500px;
+
+        .mentors__block-img {
+          grid-row-start: 1;
+        }
+      }
+  
+      &-img {
+        height: auto;
+      }
+  
+      &-title {
+        font-size: $font_m;
+        text-align: center;
+
+        &_secondary {
+          margin-top: 2em;
+        } 
+      }
+    }
+  }
+} 
+
+@media (max-width: 992px) { 
+	.disciplines {
+		padding:  20px 0 40px 0;
+		&__title{
+			text-align: center;
+		}
+		&__wrapper {
+			margin: 30px auto;
+			&::after {
+				height: 320px;
+			}
+		}
+		&__info {
+			padding: 0px;
+			li{
+				font-size: $font_s;
+			}
+
+		}
+	}
+}
+ 
+@media (max-width: 830px) { 
+
+ .objective {
+  &__benefits {
+   margin: 60px auto;
+   padding: 0;
+   grid-template-columns: 1fr;
+   grid-template-rows: none;
+   gap: 0;
+   row-gap: 30px;
+
+   .box{
+    border-radius: 4px;
+    grid-column:none;
+    display: block;
+   }
+  } 
+ }
+}
+ 
+@media (max-width: 768px) { 
+  
+  body {
+    background: rgb(2,58,102);
+    background: linear-gradient(171deg, rgba(2,58,102,1) 0%, rgba(1,18,34,1) 45%,  rgba(32,96,164,1) 100%);
+  }
+
+  .promo-bg {
+   display: none;
+  }
+
+  .main-bg {
+   display: none;
+  }
+
+  .main-screen {
+   height: auto;
+  }
+
+  .title {
+   font-size: 26px;
+  }
+
+  .screen-separator {
+    width: 71px;
+  }
+
+  .header {
+   &__wrapper {
+    justify-content: center;
+    flex-direction: column;
+   }
+  
+   &__menu {
+    margin-top: 40px;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+
+    li {
+     a {
+      font-size: $font_m;
+     }
+    }
+   }
+  }
+
+  .promo {
+   &__title {
+    font-size: $font_l;
+   }
+
+   &__subtitle {
+    font-size: $font_m;
+   }
+  }
+
+		.disciplines {
+			padding:  20px 0 40px 0;
+
+		 img{
+			 height: 80px;
+		 }
+
+			&__title{
+				text-align: center;
+				font-size: 1.7rem;
+			}
+
+			&__wrapper {
+				margin: 0 auto;
+				position: relative;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+
+				&::after {
+					display: none;
+				}
+			}
+
+			&__info {
+				padding: 0px;
+
+				li {
+					width: 300px;
+					text-align: center;
+					font-size: 14px;
+
+					&::before {
+						display: none;
+
+					}
+				}
+			}
+	}
+} 
+
+
+ 
+@media (max-width: 576px) { 
+
+ .title {
+  font-size: 20px;
+ }
+
+ .header__logo {
+  margin: 0 auto;
+ }
+ .header {
+  &__menu {
+   li {
+    a {
+     font-size: 14px;
+    }
+   }
+  }
+ }
+ .promo {
+  &__title {
+   font-size: 22px;
+  }
+
+  &__subtitle {
+   font-size: 16px;
+  }
+ }
+
+ .objective {
+  &__descr {
+   font-size: 16px;
+  }
+
+  &__subtitle {
+   font-size: $font_xs;
+   font-weight: 700;
+  }
+
+  &__benefits {
+    .box{
+     ul {
+       li {
+         font-size: 14px;
+       }
+     }
+    }
+   } 
+ }
+ 
+ .mentors {
+  padding: 0 0 70px 0;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__block {
+    align-content: center;
+    display: grid;
+    grid-template-columns: minmax(300px, 450px);
+    column-gap: 70px;
+    
+
+    &:last-child {
+      grid-template-columns: minmax(300px, 450px);
+
+      .mentors__block-img {
+        grid-row-start: 1;
+      }
+    }
+
+    &-img {
+      height: auto;
+    }
+
+    &-title {
+      font-size: $font_m;
+      text-align: center;
+    }
+  }
+}
+
+.disciplines {
+	img{
+		height: 70px;
+	}
+	padding:  20px 0 40px 0;
+
+	&__wrapper {
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		&::after {
+			display: none;
+			position: absolute;
+		}
+	}
+	&__info {
+		padding: 0px;
+		li {
+			width: 300px;
+			}
+		}
+	}
+
+}
+

@@ -1,14 +1,18 @@
 html, body {
-	height: 100%;
+	height: auto;
 }
 
 body {
-	// max-width: 1980px;
+	background: #011222;
 }
 
 img {
 	width: 100%;
 	display: block;
+}
+
+ul {
+	margin: 0;
 }
 
 * {
@@ -23,29 +27,47 @@ img {
 	position: absolute;
 	top: 0;
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	z-index: -1;
+	object-fit: cover;
 }
 
 .main-bg {
 	position: absolute;
-	top: 100vh;
 	width: 100%;
+	height: 100%;
 	z-index: -1;
+}
+
+.content, .main-screen {
+	position: relative;
+}
+
+.main-screen {
+	height: 100vh;
 }
 
 .screen-separator {
 	width: 101px;
 }
 
+.title {
+	text-align: center;
+	font-size: $font_xl;
+}
+
 .header {
-	height: 135px;
+	&__wrapper {
+		justify-content: space-between;
+	}
 
 	&__logo {
 		width: 89px;
 	}
 
 	&__menu {
+		justify-content: center;
+
 		li {
 			a {
 				font-size: $font_xs;
@@ -58,10 +80,10 @@ img {
 }
 
 .promo {
-	padding: 330px 0 105px;
+	padding: 10% 0 0 0;
 
 	&__title {
-		font-size: $font_xl;
+		font-size: $font_xxl;
 	}
 
 	&__subtitle {
@@ -70,12 +92,12 @@ img {
 	}
 
 	&__arrow-down {
-		margin-top: 215px;
+		margin-top: 15%;
 	}
 }
 
 .objective {
-	padding: 0 0 137px;
+	padding: 100px 0 137px;
 
 	&__title {
 		font-size: $font_xl;
@@ -95,17 +117,160 @@ img {
 		text-transform: uppercase;	
 	}
 
-	.mentors {
-		padding: 0 100px 110px;
+	&__benefits{
+		position: relative;
+		margin: 0 auto;
+		padding: 50px;
+		max-width: 1140px;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+		grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
+		gap: 30px;
+		:nth-child(1){
+			grid-column:span 2 ;
+			grid-row: span 2;
+		}
+		:nth-child(2){
+			grid-column: span 2;
+			grid-row: span 1;
+		}
+		:nth-child(4){
+			grid-column: span 2;
+			grid-row: span 1;
+		}
+		:nth-child(3){
+			grid-column: span 2;
+			grid-row: span 1;
+		}
+		:nth-child(5){
+			grid-column: span 2;
+			grid-row: span 1;
+		}
+		.box{
+			border-radius: 4px;
+			background-image: $block_gradient;
+			box-shadow: inset 29px 29px 52px rgba(36, 173, 250, 0.06);
+			padding: 20px;
+			display: grid;
 
-		&__block {
-			&-img {
-				min-width: 400px;
-				height: 574px;
+			ul {
+				padding: 0;
+				li {
+					list-style-type: none;
+					margin-top: 10px;
+					font-weight: 700;
+					color: $color_white;
+					span {
+						font-weight: 400;
+					}
+				}
 			}
+		}
+	}
+}
 
-			&-descr {
-				width: 505px;
+.mentors {
+	padding: 0 100px 110px;
+
+	&__block {
+		margin-top: 90px;
+		display: grid;
+		grid-template-columns: 400px 505px;
+		column-gap: 70px;
+
+		&:last-child {
+			grid-template-columns: 505px 400px;
+		}
+
+		&-img {
+			height: 574px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+
+			img {
+				border-radius: 10px;
+			}
+		}
+
+		&-title {
+			color: $color_blue;
+			font-weight: 700;
+			font-size: 28px;
+			text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			margin-top: 2em;
+			&_secondary {
+				margin-top: 100px;
+			} 
+		}
+
+		&-info {
+			padding: 0 0 0 15px;
+
+			li {
+				position: relative;
+				margin-top: 10px;
+				font-size: $font_xs;
+				line-height: 140%;
+				list-style-type: none;
+
+				&::before {
+					position: absolute;
+					content: '';
+					width: 2px;
+					height: 2px;
+					border-radius: 100%;
+					background-color: $color_white;
+					top: 8px;
+					left: -10px;
+				}
+			}
+		}
+	}
+}
+
+.disciplines {
+	padding:  0 0 100px 0;
+
+	&__wrapper {
+		position: relative;
+		margin: 105px 100px 0;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 80px;
+
+		&::after {
+			position: absolute;
+			content: '';
+			width: 1.5px;
+			height: 379px;
+			background: rgba(255, 255, 255, 0.06);
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+
+	&__info {
+		padding: 0 0 0 15px;
+		li {
+			position: relative;
+			margin-top: 10px;
+			font-size: $font_xs;
+			line-height: 140%;
+			list-style-type: none;
+
+			&::before {
+				position: absolute;
+				content: '';
+				width: 2px;
+				height: 2px;
+				border-radius: 100%;
+				background-color: $color_white;
+				top: 8px;
+				left: -10px;
 			}
 		}
 	}

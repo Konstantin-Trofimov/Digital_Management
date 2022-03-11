@@ -7,73 +7,257 @@
 	<!-- <link rel="icon" href="favicon.ico" type="image/ico"> -->
 </head>
 <body>
-	<img src="./assets/img/promo-bg.jpg" class="promo-bg" alt="promo-bg">
-	<img src="./assets/img/main-bg.jpg" class="main-bg" alt="main-bg">
-	<header class="header pt-4 pb-4">
-		<div class="container">
-			<div class="d-flex flex-wrap align-items-center justify-content-sm-between">
-				<div class="header__logo">
-					<img src="./assets/icons/logo/rea_logo.png" alt="rea_logo">
-				</div>
-				<div>
-					<ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 header__menu">
-						<li><a href="#" class="nav-link px-3 text-white">Цель</a></li>
-						<li><a href="#" class="nav-link px-3 text-white">Преподаватели</a></li>
-						<li><a href="#" class="nav-link px-3 text-white">Дисциплины</a></li>
-				</ul>
-				</div>
-			</div>
-		</div>
-	</header>
-	<section class="promo">
-		<div class="container">
-			<div class="d-flex flex-column align-items-center">
-				<h1 class="promo__title">Цифровой менеджмент</h1>
-				<div class="promo__subtitle">и предпринимательство</div>
-				<div class="promo__arrow-down">
-					<a href="">
-						<img src="./assets/icons/arrow_down.svg" alt="arrow_down">
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="objective">
-		<div class="container">
-			<div class="d-flex flex-column align-items-center">
-				<div class="screen-separator">
-					<img src="./assets/icons/separator_icon_1.svg" alt="separator_icon">
-				</div>
-				<h2 class="objective__title mt-3">Целью программы магистратуры</h2>
-				<p class="objective__descr  mt-4">
-					подготовка управленческих кадров, владеющих современными цифровыми технологиями, готовых внедрять цифровую трансформацию во всех направлениях бизнеса, обеспечивать единство, устойчивость и безопасность инфраструктуры на всех уровнях информационного пространства.
-				</p>
-				<div class="objective__subtitle">Ключевые преимущества</div>
-			</div>
-		</div>
-	</section>
-	<section class="mentors">
-		<div class="container">
-			<div class="d-flex flex-column align-items-center">
-				<div class="screen-separator">
-					<img src="./assets/icons/separator_icon_2.svg" alt="separator_icon">
-				</div>
-				<h2 class="mentors__title mt-3">Преподаватели</h2>
-				<div class="mentors__wrapper mt-4">
-					<div class="mentors__block d-flex justify-content-between">
-						<div class="mentors__block-img">
-							<img src="./assets/img/photo/lyandau_yuri.jpg" alt="lyandau_yuri">
+	<main>
+		<div class="main-screen">
+			<img src="./assets/img/promo-bg.jpg" class="promo-bg" alt="promo-bg">
+			<header class="header pt-4 pb-4">
+				<div class="container">
+					<div class="header__wrapper d-flex flex-wrap align-items-center">
+						<div class="header__logo">
+							<a href="https://new.rea.ru">
+								<img src="./assets/icons/logo/rea_logo.png" alt="rea_logo">
+							</a>
 						</div>
-						<div class="mentors__block-descr">
-							<div class="mentors__block-title"></div>
-							<ul class="mentors__block-info">
-								<li></li>
-							</ul>
+						<div>
+							<ul class="header__menu nav col-12 col-lg-auto me-lg-auto mb-2 mb-md-0">
+								<li><a href="#objective" class="nav-link px-3 text-white">Цель</a></li>
+								<li><a href="#mentors" class="nav-link px-3 text-white">Преподаватели</a></li>
+								<li><a href="#disciplines" class="nav-link px-3 text-white">Дисциплины</a></li>
+						</ul>
+						</div>
+					</div>
+				</div>
+			</header>
+			<section class="promo">
+				<div class="container">
+					<div class="d-flex flex-column align-items-center">
+						<h1 class="promo__title">Цифровой менеджмент</h1>
+						<div class="promo__subtitle">и предпринимательство</div>
+						<div class="promo__arrow-down">
+							<a href="#objective">
+								<img src="./assets/icons/arrow_down.svg" alt="arrow_down">
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="content">
+			<img src="./assets/img/main-bg.jpg" class="main-bg" alt="main-bg">
+		<section class="objective" id="objective">
+			<div class="container">
+				<div class="d-flex flex-column align-items-center">
+					<div class="screen-separator">
+						<img src="./assets/icons/separator_icon_1.svg" alt="separator_icon">
+					</div>
+					<h2 class="objective__title title mt-5">Целью программы магистратуры является</h2>
+					<p class="objective__descr  mt-4">
+						подготовка управленческих кадров, владеющих современными цифровыми технологиями, готовых внедрять цифровую трансформацию во всех направлениях бизнеса, обеспечивать единство, устойчивость и безопасность инфраструктуры на всех уровнях информационного пространства.
+					</p>
+					<div class="objective__subtitle">Ключевые преимущества</div>
+								<div class="section">
+									<div class="objective__benefits">
+									<div class="box">
+										<div class="content">
+											<div class="desc">
+												<ul>
+													<li>Проектное обучение.</li>
+													<li>Дисциплины интегрированы между собой.</li>
+													<li>Задания по всем дисциплинам выполняются по конкретному проекту.</li>
+													<li>Отсутствие подходов «все занятия про одно и тоже» или «только теория».</li>
+													<li>По ходу обучения и выполнения заданий формируется выпускной проект.</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="box">
+										<div class="content">
+											<ul>
+												<li>Все занятия проводятся в онлайн-режиме.</li>
+												<li>Материалы размещены на цифровой платформе.</li>
+												<li>Цифровые двойники дисциплин.</li>
+											</ul>
+										</div>
+									</div>
+									<div class="box">
+										<div class="content">
+											<ul>
+												<li>
+													В процессе обучения формируется портфолио студента <span> с его сильными и слабыми сторонами, а также рекомендациями по совершенствованию знаний и навыков.</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								<div class="box">
+									<div class="content">
+										<ul>
+											<li>
+												Не требуется специальных знаний <span> в области программирования и администрирования программных продуктов.</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="box">
+									<div class="content">
+										<ul>
+											<li>
+												Проектный акселератор для разработки новых <span>технологичных продуктов и моделирование у студентов «Soft Skills» и «Digital Skills» в рамках формирования их индивидуальных траекторий.</span> 
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="box">
+									<div class="content">
+										<ul>
+											<li>
+												Обучение <span>современным онлайн-инструментам, необходимым для эффективной работы компании.</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="box">
+									<div class="content">
+										<ul>
+											<li>
+												<span>Консультации с ведущими преподавателями-практиками по практическим вопросам.</span>	
+											</li>
+										</ul>
+									</div>
+								</div>
+							<div class="box">
+								<div class="content">
+									<ul>
+										<li>
+											<span>Взаимодействие с тьюторами в онлайн-режиме.</span>	 
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="box">
+								<div class="content">
+									<ul>
+										<li>
+											<span>Геймификация в процессе обучения.</span>	 
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>       
+					</div>  
+				</div>
+			</div>
+		</section>
+		<section class="mentors" id="mentors">
+			<div class="container">
+				<div class="d-flex flex-column align-items-center">
+					<div class="screen-separator">
+						<img src="./assets/icons/separator_icon_2.svg" alt="separator_icon">
+					</div>
+					<h2 class="mentors__title title mt-5">Преподаватели</h2>
+					<div class="mentors__wrapper">
+						<div class="mentors__block">
+							<div class="mentors__block-img">
+								<img src="./assets/img/photo/lyandau_yuri.jpg" alt="lyandau_yuri">
+							</div>
+							<div class="mentors__block-descr">
+								<div class="mentors__block-title">Ляндау Юрий Владимирович</div>
+								<ul class="mentors__block-info mt-3">
+									<li>Разработчик программы магистратуры «Цифровой менеджмент и предпринимательство»</li>
+									<li>Заведующий Базовой кафедрой Благотворительного фонда поддержки образовательных программ «КАПИТАНЫ» «Инновационный менеджмент и социальное предпринимательство»</li>
+									<li>Доктор экономических наук</li>
+									<li>Профессор ФГБОУ ВО «РЭУ им. Г.В. Плеханова»</li>
+									<li>Эксперт Ассоциации цифровой трансформации</li>
+									<li>Эксперт Торгово-промышленной палаты РФ</li>
+									<li>Бизнес-консультант, организатор бизнес-проектов в сфере управленческого консалтинга, общественного питания, информационных технологий</li>
+									<li>Преподаватель практических курсов по цифровой трансформации организации для бизнеса и государственных структур, по менеджменту, бизнес-технологиям, ценообразованию, моделированию бизнеса, один из авторов современной концепции менеджмента в цифровой экономике</li>
+									<li>Разработчик профессионального стандарта «Специалист по прогнозированию и экспертизе цен на товары, работы, услуги»</li>
+									<li>Участник команды проекта «Предпринимательский класс»</li>
+									<li>Автор учебников по менеджменту, ценообразованию, проектированию систем управления, построению эффективных бизнес-моделей</li>
+								</ul>
+							</div>
+						</div>
+						<div class="mentors__block">
+							<div class="mentors__block-descr">
+								<div class="mentors__block-title mentors__block-title_secondary">Быкова Ольга Николаевна</div>
+								<ul class="mentors__block-info mt-3">
+									<li>Доктор экономических наук</li>
+									<li>Профессор Базовой кафедры Благотворительного фонда поддержки образовательных программ «КАПИТАНЫ»</li>
+									<li>Доктор экономических наук</li>
+									<li>ФГБОУ ВО «РЭУ им. Г.В. Плеханова»</li>
+									<li>Эксперт в ТПП РФ комитет по предпринимательству в сфере экономики недвижимости</li>
+									<li>Является разработчиком авторских курсов эффективное управление предприятием, антикризисное управление, инновационное предпринимательство</li>
+									<li>Организатор проекта «Предпринимательский класс»</li>
+								</ul>
+							</div>
+							<div class="mentors__block-img">
+								<img src="./assets/img/photo/bykova_olga.jpg" alt="lyandau_yuri">
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+		</section>
+		<section class="disciplines" id="disciplines">
+			<div class="container">
+				<div class="d-flex flex-column align-items-center">
+					<div class="screen-separator">
+						<img src="./assets/icons/separator_icon_3.svg" alt="separator_icon">
+					</div>
+					<h2 class="disciplines__title title mt-5">Основные учебные дисциплины</h2>
+			</div>
+			<div class="disciplines__wrapper">
+				<ul class="disciplines__info">
+					<li>Иностранный язык делового и профессионального общения</li>
+					<li>Технологии переговорного процесса</li>
+					<li>Эмоциональный интеллект и лидерство</li>
+					<li>Цифровой дизайн</li>
+					<li>Технологии визуализации данных</li>
+					<li>Инструменты и технологии инвестирования</li>
+					<li>Цифровая трансформация бизнеса</li>
+					<li>Цифровой маркетинг</li>
+					<li>Цифровые модели и двойники</li>
+				</ul>
+				<ul class="disciplines__info">
+					<li>Интернет вещей</li>
+					<li>Облачные технологии для бизнеса</li>
+					<li>Финансовая оболочка бизнеса</li>
+					<li>Блокчейн</li>
+					<li>Цифровые платформы и экосистемы</li>
+					<li>Искусственный интеллект и интеллектуальный анализ данных</li>
+					<li>Разработка конкурентной стратегии организации</li>
+					<li>Эффективные бизнес-модели предпринимательства</li>
+				</ul>
+			</div>
+		</section>
 		</div>
-	</section>
+	</main>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
