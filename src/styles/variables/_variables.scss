@@ -1,15 +1,17 @@
 // colors: 
 
+$color_main: #282828;
+$color_black: #000000;
 $color_white:#FFFFFF;
-$color_blue:#359ED9;
-$color_dark_blue:#2A6E94;
-$block_gradient: linear-gradient(109.2deg, rgba(250, 36, 36, 0.25) -21.7%, rgba(15, 30, 71, 0.06) 73.58%);
+$color_blue:#007FE6;
+$color_dark_blue:#061C58;
+$block_gradient: linear-gradient(180deg, #C6CBCF 0%, #F8F1FE 100%);
 
 // fonts:
 
 $font_xs: 16px;
-$font_s: 14px;
-$font_m: 18px;
-$font_l: 34px;
-$font_xl: 44px;
-$font_xxl: 54px;
+$font_s: 19px;
+$font_m: 23px;
+$font_l: 35px;
+$font_xl: 55px;
+$font_xxl: 80px;
