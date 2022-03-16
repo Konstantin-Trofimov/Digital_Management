@@ -2,6 +2,14 @@
  
 } 
 @media (max-width: 1200px) { 
+  .promo {
+    &__logo {
+      width: calc($promo_logo_width * .7);
+      height: calc($promo_logo_height * .7);
+      left: 550px;
+    }
+  }
+
   .mentors {
     padding: 0;
 
@@ -13,6 +21,21 @@
 } 
 
 @media (max-width: 1040px) { 
+
+  .promo {
+    &__title {
+      font-size: $font_xl;
+    }
+
+    &__subtitle {
+      font-size: $font_l;
+    }
+
+    &__logo {
+      display: none;
+    }
+  }
+
   .mentors {
     padding: 0 0 70px 0;
 
@@ -54,68 +77,79 @@
 } 
 
 @media (max-width: 992px) { 
-	.disciplines {
-		padding:  20px 0 40px 0;
-		&__title{
-			text-align: center;
-		}
-		&__wrapper {
-			margin: 30px auto;
-			&::after {
-				height: 320px;
-			}
-		}
-		&__info {
-			padding: 0px;
-			li{
-				font-size: $font_s;
-			}
+  .disciplines {
+    padding:  20px 0 40px 0;
 
-		}
-	}
+    &__title{
+      text-align: center;
+    }
+    &__wrapper {
+      margin: 30px auto;
+
+      &::after {
+        height: 320px;
+      }
+    }
+    &__info {
+      padding: 0px;
+
+      li{
+        font-size: $font_s;
+      }
+
+    }
+  }
 }
  
 @media (max-width: 830px) { 
+  .objective {
+    
+    &__benefits {
+      margin: 60px auto;
+      padding: 0;
+      grid-template-columns: 1fr;
+      grid-template-rows: none;
+      gap: 0;
+      row-gap: 30px;
 
- .objective {
-  &__benefits {
-   margin: 60px auto;
-   padding: 0;
-   grid-template-columns: 1fr;
-   grid-template-rows: none;
-   gap: 0;
-   row-gap: 30px;
-
-   .box{
-    border-radius: 4px;
-    grid-column:none;
-    display: block;
-   }
-  } 
- }
+      .box {
+        border-radius: 4px;
+        grid-column:none;
+        display: block;
+      }
+    } 
+  }
 }
  
 @media (max-width: 768px) { 
   
-  body {
-    background: rgb(2,58,102);
-    background: linear-gradient(171deg, rgba(2,58,102,1) 0%, rgba(1,18,34,1) 45%,  rgba(32,96,164,1) 100%);
-  }
+  // body {
+  //   background: rgb(2,58,102);
+  //   background: linear-gradient(171deg, rgba(2,58,102,1) 0%, rgba(1,18,34,1) 45%,  rgba(32,96,164,1) 100%);
+  // }
 
   .promo-bg {
    display: none;
   }
 
   .main-bg {
-   display: none;
+    display: none;
   }
 
   .main-screen {
-   height: auto;
+    height: auto;
+    background-color: $color_dark_blue;
   }
 
   .title {
-   font-size: 26px;
+    text-align: center;
+    font-size: $font_l;
+    // font-weight: 400;
+
+    span {
+      font-size: $font_l;
+      // font-weight: 400;
+    }
   }
 
   .screen-separator {
@@ -123,77 +157,100 @@
   }
 
   .header {
-   &__wrapper {
-    justify-content: center;
-    flex-direction: column;
-   }
-  
-   &__menu {
-    margin-top: 40px;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 150px;
-
-    li {
-     a {
-      font-size: $font_m;
-     }
+    &__wrapper {
+      justify-content: center;
+      flex-direction: column;
     }
-   }
+  
+    &__menu {
+      margin-top: 40px;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 170px;
+
+      li {
+        a {
+          font-size: $font_m;
+        }
+      }
+      }
   }
 
   .promo {
-   &__title {
-    font-size: $font_l;
-   }
+    padding: 10% 0 10% 0;
 
-   &__subtitle {
-    font-size: $font_m;
-   }
+    &__wrapper {
+      @include column;
+    }
+
+    &__title {
+      font-size: $font_l;
+      font-weight: 600;
+    }
+
+    &__subtitle {
+      font-size: $font_m;
+      font-weight: 600;
+    }
   }
 
-		.disciplines {
-			padding:  20px 0 40px 0;
+  .objective {
+    &__wrapper {
+      @include column;
+    }
 
-		 img{
-			 height: 80px;
-		 }
+    &__descr {
+      margin: 63px 0 0 0;
+      font-size: 28px;
+    }
 
-			&__title{
-				text-align: center;
-				font-size: 1.7rem;
-			}
+    &__ellipse {
+      display: none;
+    }
+  }
 
-			&__wrapper {
-				margin: 0 auto;
-				position: relative;
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				align-items: center;
+  .disciplines {
+    padding:  20px 0 40px 0;
 
-				&::after {
-					display: none;
-				}
-			}
+    img {
+      height: 80px;
+    }
 
-			&__info {
-				padding: 0px;
+    &__title{
+      text-align: center;
+      font-size: 1.7rem;
+    }
 
-				li {
-					width: 300px;
-					text-align: center;
-					font-size: 14px;
+    &__wrapper {
+      margin: 0 auto;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
-					&::before {
-						display: none;
+      &::after {
+        display: none;
+      }
+    }
 
-					}
-				}
-			}
-	}
+    &__info {
+      padding: 0px;
+
+      li {
+        width: 300px;
+        text-align: center;
+        font-size: 14px;
+
+        &::before {
+          display: none;
+
+        }
+      }
+    }
+  }
 } 
 
 
@@ -201,48 +258,51 @@
 @media (max-width: 576px) { 
 
  .title {
-  font-size: 20px;
- }
-
- .header__logo {
-  margin: 0 auto;
- }
- .header {
-  &__menu {
-   li {
-    a {
-     font-size: 14px;
+    font-size: $font_l_mobile;
+    line-height: 150%;
+    span {
+      font-size: $font_l_mobile;
     }
-   }
   }
- }
+
+  .header__logo {
+    margin: 0 auto;
+  }
+
+  .header {
+    &__menu {
+      li {
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
  .promo {
+
   &__title {
-   font-size: 22px;
+   font-size: $font_l_mobile;
   }
 
   &__subtitle {
-   font-size: 16px;
+    font-size: $font_l_mobile;
   }
  }
 
  .objective {
-  &__descr {
-   font-size: 16px;
-  }
 
-  &__subtitle {
-   font-size: $font_xs;
-   font-weight: 700;
+  &__descr {
+    font-size: $font_m;
   }
 
   &__benefits {
-    .box{
-     ul {
-       li {
-         font-size: 14px;
-       }
-     }
+    .box {
+      ul {
+        li {
+          font-size: 14px;
+        }
+      }
     }
    } 
  }
@@ -283,29 +343,31 @@
 }
 
 .disciplines {
-	img{
-		height: 70px;
-	}
-	padding:  20px 0 40px 0;
 
-	&__wrapper {
-		margin: 0 auto;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		&::after {
-			display: none;
-			position: absolute;
-		}
-	}
-	&__info {
-		padding: 0px;
-		li {
-			width: 300px;
-			}
-		}
-	}
+  img {
+    height: 70px;
+  }
+  padding:  20px 0 40px 0;
+
+  &__wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &::after {
+      display: none;
+      position: absolute;
+    }
+  }
+  &__info {
+    padding: 0px;
+
+    li {
+      width: 300px;
+      }
+    }
+  }
 
 }
 

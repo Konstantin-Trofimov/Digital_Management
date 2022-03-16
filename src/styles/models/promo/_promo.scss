@@ -1,0 +1,45 @@
+.promo {
+	padding: 10% 0 0 0;
+
+	&__wrapper {
+		position: relative;
+	}
+
+	&__title {
+		font-size: $font_xxl;
+		color: $color_white;
+	}
+
+	&__subtitle {
+		font-size: $font_xl;
+		color: $color_white;
+	}
+
+	&__look-down {
+		margin-top: 69px;
+
+		a {
+			width: 270px;
+			height: 64px;		
+			background-color: $color_blue;
+			place-items: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			span {
+				font-weight: 700;
+				font-size: 20px;
+				color: $color_white;
+			}
+		}
+	}
+
+	&__logo {
+		position: absolute;
+		width: $promo_logo_width;
+		height: $promo_logo_height;
+		left: 700px;
+		top: 150px;
+	}
+}

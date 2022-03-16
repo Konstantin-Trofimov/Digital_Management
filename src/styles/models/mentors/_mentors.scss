@@ -1,0 +1,61 @@
+.mentors {
+	padding: 162px 0 0;
+
+	&__content {
+		margin: 75px;
+		display: grid;
+		gap: 90px;
+	}
+
+	&__block {
+		display: grid;
+		height: 497px;
+		gap: 103px;
+
+		&:nth-child(odd) {
+			grid-template-columns: 497px minmax(530px, 600px);
+		}
+
+		&:nth-child(even) {
+			grid-template-columns: minmax(530px, 600px) 497px;
+		}
+
+		&-img {
+			border-radius: 15px;
+			height: 100%;
+		}
+
+		&-descr {
+			padding: 25px 0;
+		}
+
+		&-title {
+			font-weight: 600;
+			font-size: $font_l;
+			color: $color_black;
+		}
+
+		&-info {
+			margin-top: 30px;
+			padding: 0 0 0 35px;
+
+			li {
+				position: relative;
+				margin-top: 10px;
+				font-size: $font_xs;
+				line-height: 150%;
+				list-style-type: none;
+
+				&::before {
+					position: absolute;
+					content: '';
+					width: 20px;
+					height: 15px;
+					background: url(../assets/icons/checkmark.svg);
+					top: 6px;
+					left: -30px;
+				}
+			}
+		}
+	}
+}

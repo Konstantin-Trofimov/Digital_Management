@@ -1,0 +1,51 @@
+.disciplines {
+	padding:  170px 0 194px 0;
+
+	&__list {
+		position: relative;
+		margin-top: 68px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 80px;
+	}
+
+	ul {
+
+		&:nth-child(1) {
+			margin-top: 0;
+		}
+
+		li {
+			position: relative;
+			margin-top: 45px;
+			list-style-type: none;
+			display: grid;
+			grid-template-columns: 70px auto;
+			align-items: center;
+			gap: 30px;
+
+			p {
+				font-size: $font_m;
+				line-height: 150%;
+				font-weight: 600;
+			}
+		}
+	}
+
+	&__icon {
+		width: 70px !important;
+		height: 70px !important;
+		background: $block_gradient;
+		transform: rotate(-180deg);
+		border-radius: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	 transform: rotate(360deg);
+
+		img {
+			width: 50%;
+			height: 50%;
+		}
+	}
+}

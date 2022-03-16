@@ -1,0 +1,22 @@
+.objective {
+	padding: 103px 0 0;
+
+	&__wrapper {
+		position: relative;
+	}
+
+	&__descr {
+		margin: 63px 0 0 100px;
+		max-width: 894px;
+		line-height: 150%;
+		font-size: $font_m;
+	}
+
+	&__ellipse {
+		position: absolute;
+		width: 146px;
+		height: 146px;
+		z-index: -1;
+		top: 80px;
+	}
+}

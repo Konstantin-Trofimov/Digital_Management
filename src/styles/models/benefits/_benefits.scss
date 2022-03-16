@@ -1,0 +1,29 @@
+.benefits {
+	padding: 162px 0 0;
+
+	&__items {
+		margin: 75px 0 0 35px;
+		display: grid;
+		grid-template: minmax(49px, 1fr) / repeat(3, 330px);
+		grid-auto-flow: row;
+		column-gap: 65px;
+		row-gap: 49px;
+	}
+
+	&__item {
+		position: relative;
+		line-height: 150%;
+		font-size: $font_s;
+
+		&::before {
+			position: absolute;
+			content: '';
+			width: 18px;
+			height: 18px;
+			background: $color_dark_blue;
+			border-radius: 100%;
+			top: 5px;
+			left: -35px;
+		}
+	}
+}
